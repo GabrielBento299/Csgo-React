@@ -13,7 +13,7 @@ export default function useFetch(endPoint: string) {
     try {
       const response = await api.get(`/${endPoint}?_page=${page}&_limit=${itemPerPage}`);
       setTotalPage(Number(response.headers['x-total-count'] / itemPerPage));
-      setItemsApi(response.data);
+      setItemsApi((prevState) => [...prevState, ...response.data]);
     } catch (err) {
       alert(err);
     } finally {
@@ -21,10 +21,26 @@ export default function useFetch(endPoint: string) {
     }
   }
 
+  // eslint-disable-next-line consistent-return
+  function handleScroll() {
+    if (window.innerHeight + document.documentElement.scrollTop
+         < document.documentElement.offsetHeight || page === totalPage) {
+      return;
+    }
+
+    setPage((state) => state + 1);
+  }
+
   useEffect(() => {
     loadData();
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page]);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [loading]);
 
   return {
     loading,
