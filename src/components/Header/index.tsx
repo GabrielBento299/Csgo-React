@@ -11,9 +11,9 @@ export default function Header() {
         <NavLink to={path.agents}> Agentes </NavLink>
         <NavLink to={path.cases}> Cases </NavLink>
         <NavLink to={path.graffiti}> Grafite </NavLink>
-        <NavLink to={path.music}> Musica foto </NavLink>
+        <NavLink to={path.music}> Musica </NavLink>
         <NavLink to={path.skins}> Skinks </NavLink>
-        <Link to={path.stickers}> Stickers </Link>
+        <NavLink to={path.stickers}> Stickers </NavLink>
       </nav>
     </header>
   );
