@@ -15,5 +15,34 @@ html {
 body {
     -webkit-font-smoothing: antialiased;
     font-family: "Roboto", sans-serif;
-    color: $white;
+    background-color: $dark-blue;
 }
+
+.list {
+    width: 100%;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        color: $gray
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: $dark-blue;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $orange;
+    border-radius: 8px;
+  }
