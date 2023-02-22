@@ -8,11 +8,20 @@
     z-index: 10;
     padding: 4rem;
 
+    @media screen and (max-width: 800px) {
+        position: relative;
+    }
+
+
     .list-links {
         display: flex;
         align-items: center;
         gap: 1rem;
         flex-wrap: wrap;
+
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+        }
 
         a {
             color: $white;
