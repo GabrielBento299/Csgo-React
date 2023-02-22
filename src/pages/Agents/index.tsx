@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/heading-has-content */
 import { FaGem } from 'react-icons/fa';
 import Card from '../../components/Card';
+import Loader from '../../components/Loader';
 import PageLayout from '../../components/PageLayout';
 import useFetch from '../../hooks/useFetch';
 
