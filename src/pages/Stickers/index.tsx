@@ -1,6 +1,3 @@
-import {
-  FaGem, FaMinus, FaPlus, FaShieldAlt,
-} from 'react-icons/fa';
 import Card from '../../components/Card';
 import PageLayout from '../../components/PageLayout';
 import useFetch from '../../hooks/useFetch';

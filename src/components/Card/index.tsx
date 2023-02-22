@@ -13,6 +13,12 @@ interface ICardProps {
 export default function Card({
   name, image, description, children,
 }: ICardProps) {
+  const steamMarketLink = 'https://steamcommunity.com/market/search?appid=730&q=';
+
+  function LinkFormat(nameLink: string) {
+    return nameLink.replace(/[^a-z0-9]/gi, '');
+  }
+
   return (
     <div className="card">
       <img src={image} alt={name} />
@@ -23,14 +29,14 @@ export default function Card({
           <p>{description}</p>
           {children && (
           <div className="card-description">
-            <div className="divider-top" />
+            <div className="divider top" />
             {children}
           </div>
           )}
         </div>
 
         <div className="divider">
-          <a target="_blank" href="#;" className="btn-link">Ver na loja <FaSteam className="icon" size={20} /> </a>
+          <a target="_blank" href={`${steamMarketLink}${LinkFormat(name)}`} className="btn-link" rel="noreferrer">Ver na loja <FaSteam className="icon" size={20} /> </a>
         </div>
       </main>
     </div>

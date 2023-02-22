@@ -24,7 +24,7 @@ export default function useFetch(endPoint: string) {
   // eslint-disable-next-line consistent-return
   function handleScroll() {
     if (window.innerHeight + document.documentElement.scrollTop
-         < document.documentElement.offsetHeight || page === totalPage) {
+         < document.documentElement.offsetHeight || page === totalPage || loading) {
       return;
     }
 

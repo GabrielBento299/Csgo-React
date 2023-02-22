@@ -26,7 +26,7 @@ export default function Agents() {
     >
       {itemsApi.map((agent: IAgent) => (
         <Card
-          key={`${agent.id}- ${agent.name}`}
+          key={`${agent.id}`}
           image="https://cdn.cardsrealm.com/images/uploads/7104-1662589752.jpeg"
           name={agent.name}
           description={agent.description}
