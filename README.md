@@ -1,5 +1,7 @@
 Projeto para consulta de informações, sobre o counter strike global offensive, consumido uma api que esta em "https://json-server-vercel-ten-ruddy.vercel.app/" 
 
+<p>Link do projeto está no meu portfólio "https://my-portifolio-flax.vercel.app/#portifolio"</p>
+
 
 <h1>#Home</h1>
 
