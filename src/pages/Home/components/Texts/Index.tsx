@@ -3,8 +3,10 @@ import './styles.scss';
 export default function Texts() {
   return (
     <section className="texts">
-      <h1>CSGO: WIKI</h1>
-      <p>Tudo sobre Counter strike global</p>
+      <h1>counter strike global offensive</h1>
+      <p>Counter-Strike: Global Offensive, mais famoso como CS:GO, <br />
+        é um jogo competitivo de tiro em primeira pessoa (FPS).
+      </p>
     </section>
   );
 }

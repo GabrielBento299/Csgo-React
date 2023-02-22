@@ -18,6 +18,7 @@
         letter-spacing: 2px;
         text-align: center;
         font-size: 3rem;
+        text-transform: uppercase;
     }
 
     .content {
@@ -46,6 +47,10 @@
             flex-wrap: wrap;
             padding: 0 2rem;
             gap: 4rem;
+
+            @media screen and (max-width: 800px) {
+                padding: 0 1rem;
+            }
         }
     }
 

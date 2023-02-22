@@ -12,7 +12,6 @@
         position: relative;
     }
 
-
     .list-links {
         display: flex;
         align-items: center;
@@ -29,16 +28,19 @@
             border-radius: 8px;
             font-size: 1.3rem;
             font-weight: bold;
-            transition: all .4s ease-in-out;
             text-decoration: none;
 
-            &.active {
-                background-color: $orange;
-            }
+            transition: all .2s ease-in-out;
 
             &:hover {
-                filter: brightness(1.75);
+                color: $light-gray;
             }
+
+            &.active {
+                background-color: $red-500;
+            }
+
+
         }
     }
 }
