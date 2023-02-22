@@ -24,7 +24,7 @@ export default function Stickers() {
       {itemsApi.map((stickers: IStickers) => (
         <Card
           key={`${stickers.id}- ${stickers.name}`}
-          image="https://cdn.cardsrealm.com/images/uploads/7104-1662589752.jpeg"
+          image={stickers.image}
           name={stickers.name}
           description={stickers.description}
         />

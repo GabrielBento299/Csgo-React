@@ -30,7 +30,7 @@ export default function Cases() {
       {itemsApi.map((caseApi: ICase) => (
         <Card
           key={`${caseApi.id}- ${caseApi.name}`}
-          image="https://cdn.cardsrealm.com/images/uploads/7104-1662589752.jpeg"
+          image={caseApi.image}
           name={caseApi.name}
           description={caseApi.description ? caseApi.description : 'Sem descrição'}
         >

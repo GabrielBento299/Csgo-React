@@ -29,7 +29,7 @@ export default function Musics() {
       {itemsApi.map((music: IMusics) => (
         <Card
           key={`${music.id}- ${music.name}`}
-          image="https://cdn.cardsrealm.com/images/uploads/7104-1662589752.jpeg"
+          image={music.image}
           name={music.name}
           description={music.description}
         >

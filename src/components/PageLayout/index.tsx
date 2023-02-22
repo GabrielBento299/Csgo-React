@@ -35,7 +35,7 @@ export default function PageLayout({
 
   return (
     <div className="page-layout">
-      <h1>{title}</h1>
+      <h1>#{title}</h1>
       <main className="content">
         {!hasData && <p className="no-data">Sem dados...</p>}
         {children && <div className="children">{children}</div>}

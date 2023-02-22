@@ -19,7 +19,7 @@ export default function Graffiti() {
 
   return (
     <PageLayout
-      title="CASES"
+      title="GRAFITE"
       hasData={!loading && !!itemsApi.length}
       initialLOading={loading && !itemsApi.length}
       fetchingMoreData={loading && page > 1}
@@ -27,7 +27,7 @@ export default function Graffiti() {
       {itemsApi.map((graffiti: IGraffiti) => (
         <Card
           key={`${graffiti.id}- ${graffiti.name}`}
-          image="https://cdn.cardsrealm.com/images/uploads/7104-1662589752.jpeg"
+          image={graffiti.image}
           name={graffiti.name}
         >
           <ul className="list">

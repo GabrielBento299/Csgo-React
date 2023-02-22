@@ -31,7 +31,7 @@ export default function Skins() {
       {itemsApi.map((skins: ISkins) => (
         <Card
           key={`${skins.id}- ${skins.name}`}
-          image="https://cdn.cardsrealm.com/images/uploads/7104-1662589752.jpeg"
+          image={skins.image}
           name={skins.name}
           description={skins.description}
         >
